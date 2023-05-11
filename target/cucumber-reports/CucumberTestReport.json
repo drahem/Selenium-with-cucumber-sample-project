@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-11T14:54:52.363Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10422410300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "open Bahrain page and check packages names",
+        "description": "",
+        "id": "bahrain-packages;open-bahrain-page-and-check-packages-names",
+        "after": [
+          {
+            "result": {
+              "duration": 489902100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2995468500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Home page in English",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.homePageWithoutLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2300654500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open Bahrain country page",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.openHomePageInBH()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99141600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "get plans names",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.checkPlansNames()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173601200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check Bahrain Currency",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.checkBahrainCurrency()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bahrain packages",
+    "description": "  as a user i want to open Bahrain page and check packages names",
+    "id": "bahrain-packages",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/checkPlansOfBahrain.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-11T14:55:08.911Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6808219400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "open KSA page and check packages names",
+        "description": "",
+        "id": "ksa-packages;open-ksa-page-and-check-packages-names",
+        "after": [
+          {
+            "result": {
+              "duration": 430606300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2129012300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Home page in English",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.homePageWithoutLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3551806800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open KSA country page",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.openHomePageInKSA()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 173998500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "get plans names",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.checkPlansNames()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149522900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check KSA Currency",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.checkKSACurrency()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "KSA packages",
+    "description": "  as a user i want to open KSA page and check packages names",
+    "id": "ksa-packages",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/checkPlansOfKSA.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-11T14:55:22.167Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6199821600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "open Kuwait page and check packages names",
+        "description": "",
+        "id": "kuwait-packages;open-kuwait-page-and-check-packages-names",
+        "after": [
+          {
+            "result": {
+              "duration": 471661900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2678624200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Home page in English",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.homePageWithoutLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8306925500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open Kuwait country page",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.openHomePageInKW()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94188500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "get plans names",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.checkPlansNames()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108001900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check Kuwait Currency",
+            "match": {
+              "location": "StepDefinitions.HomeSteps.checkKuwaitCurrency()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Kuwait packages",
+    "description": "  as a user i want to open Kuwait page and check packages names",
+    "id": "kuwait-packages",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/checkPlansOfKuwait.feature",
+    "tags": []
+  }
+]

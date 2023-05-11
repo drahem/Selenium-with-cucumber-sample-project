@@ -1,0 +1,3 @@
+StepDefinitions\Hooks.class
+StepDefinitions\HomeSteps.class
+Runners\TestRunner.class
