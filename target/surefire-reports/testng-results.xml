@@ -1,24 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-11T16:54:51 EET" name="Surefire suite" finished-at="2023-05-11T16:55:40 EET" duration-ms="49146">
+  <suite started-at="2023-05-13T11:01:07 EET" name="Surefire suite" finished-at="2023-05-13T11:04:04 EET" duration-ms="176419">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@275710fc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-05-11T16:54:51 EET" name="Surefire test" finished-at="2023-05-11T16:55:40 EET" duration-ms="49146">
+    <test started-at="2023-05-13T11:01:07 EET" name="Surefire test" finished-at="2023-05-13T11:04:04 EET" duration-ms="176419">
       <class name="Runners.TestRunner">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:54:51 EET" name="beforeSuite" finished-at="2023-05-11T16:54:51 EET" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:01:07 EET" name="beforeSuite" finished-at="2023-05-13T11:01:07 EET" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:54:51 EET" name="setUpClass" finished-at="2023-05-11T16:54:52 EET" duration-ms="919" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:01:07 EET" name="setUpClass" finished-at="2023-05-13T11:01:08 EET" duration-ms="649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:54:52 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-11T16:55:08 EET" duration-ms="16781" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:01:08 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:01:22 EET" duration-ms="13925" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open KSA page and use gift code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[KSA gift code]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 9.029
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SI31G4B', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MKSOLU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30316a09747ff7813548e91b0cff2088]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.029
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SI31G4B', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MKSOLU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30316a09747ff7813548e91b0cff2088
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at StepDefinitions.Hooks.setUp(Hooks.java:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:01:22 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:01:38 EET" duration-ms="16504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +82,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:55:08 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-11T16:55:22 EET" duration-ms="13259" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:01:38 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:01:51 EET" duration-ms="12370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open Bahrain page and check packages names"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Bahrain packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:01:51 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:02:03 EET" duration-ms="12515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open Bahrain page and check packages names"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Bahrain packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:02:03 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:02:17 EET" duration-ms="13352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +130,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:55:22 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-11T16:55:40 EET" duration-ms="17875" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:02:17 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:02:30 EET" duration-ms="13028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open KSA page and check packages names"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[KSA packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:02:30 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:02:43 EET" duration-ms="12955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open KSA page and check packages names"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[KSA packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:02:43 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:02:58 EET" duration-ms="15390" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,11 +178,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:55:40 EET" name="tearDownClass" finished-at="2023-05-11T16:55:40 EET" duration-ms="177" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:02:58 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:03:12 EET" duration-ms="13754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open Kuwait page and check packages names"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Kuwait packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:03:12 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:03:26 EET" duration-ms="14498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open Kuwait page and check packages names"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Kuwait packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:03:26 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:03:40 EET" duration-ms="13232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open KSA page and subscribe to lite package"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[KSA packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:03:40 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:03:51 EET" duration-ms="11761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open KSA page and subscribe to lite package"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[KSA packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:03:51 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-13T11:04:03 EET" duration-ms="12200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open KSA page and subscribe to lite package"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[KSA packages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:04:03 EET" name="tearDownClass" finished-at="2023-05-13T11:04:04 EET" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runners.TestRunner@275710fc]" started-at="2023-05-11T16:55:40 EET" name="afterSuite" finished-at="2023-05-11T16:55:40 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runners.TestRunner@400cff1a]" started-at="2023-05-13T11:04:04 EET" name="afterSuite" finished-at="2023-05-13T11:04:04 EET" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

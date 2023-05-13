@@ -1,6 +1,7 @@
 package Enums;
 
 public enum EnvironmentType {
-    LOCAL,
-    REMOTE
+    QA,
+    PreProd,
+    Prod
 }

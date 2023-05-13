@@ -55,7 +55,7 @@ public class AllDriverManager {
     }
 
     private WebDriver createDriver() {
-        if (environmentType == EnvironmentType.LOCAL) {
+        if (environmentType == EnvironmentType.QA) {
             webDriver = createLocalDriver();
         }
         return webDriver;

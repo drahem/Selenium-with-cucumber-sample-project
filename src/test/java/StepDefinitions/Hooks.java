@@ -23,6 +23,7 @@ public class Hooks {
     public void setUp() {
         webDriver = testContext.getDriverManager().getDriver();
         webDriver.get(FileReaderManager.getInstance().getConfigFileReader().getUrl());
+        webDriver.manage().window().maximize();
     }
 
     @After

@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import PageObjects.HomePage;
+import Utilities.Log;
 import Utilities.TestContext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -9,6 +10,8 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 import java.util.List;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class HomeSteps {
 
@@ -46,35 +49,57 @@ public class HomeSteps {
         Assert.assertEquals(homePage.getCurrentCountryName(), "Kuwait");
     }
 
-    @And("get plans names")
-    public void checkPlansNames(){
+
+    @Then("check Kuwait Currency {string} {string}")
+    public void checkKuwaitCurrency(String price, String id) {
+        List<String> prices = homePage.getPrices();
+        Assert.assertEquals(prices.get(Integer.parseInt(id)), price);
+    }
+
+    @Then("check KSA Currency {string} {string}")
+    public void checkKSACurrency(String price, String id) {
+        List<String> prices = homePage.getPrices();
+        Assert.assertEquals(prices.get(Integer.parseInt(id)), price);
+    }
+
+    @Then("check Bahrain Currency {string} {string}")
+    public void checkBahrainCurrency(String price, String id) {
+        List<String> prices = homePage.getPrices();
+        Assert.assertEquals(prices.get(Integer.parseInt(id)), price);
+    }
+
+
+    @And("get plans names {string} {string}")
+    public void getPlansNames(String name, String id) {
         List<String> plans = homePage.getPlans();
-        Assert.assertEquals(plans.get(0), "LITE");
-        Assert.assertEquals(plans.get(1), "CLASSIC");
-        Assert.assertEquals(plans.get(2), "PREMIUM");
+        Assert.assertEquals(plans.get(Integer.parseInt(id)), name);
+
+        System.out.println(plans.get(0));
+        System.out.println(plans.get(1));
+        System.out.println(plans.get(2));
     }
 
-    @Then("check Kuwait Currency")
-    public void checkKuwaitCurrency() {
-        List<String> prices = homePage.getPrices();
-        Assert.assertEquals(prices.get(0), "KWD/month");
-        Assert.assertEquals(prices.get(1), "KWD/month");
-        Assert.assertEquals(prices.get(2), "KWD/month");
+    @And("open gift code page")
+    public void openGiftCodePage() {
+        homePage.openGiftCardPage();
     }
 
-    @Then("check KSA Currency")
-    public void checkKSACurrency() {
-        List<String> prices = homePage.getPrices();
-        Assert.assertEquals(prices.get(0), "SAR/month");
-        Assert.assertEquals(prices.get(1), "SAR/month");
-        Assert.assertEquals(prices.get(2), "SAR/month");
+    @Then("enter gift code {string} {string}")
+    public void enterGiftCode(String code, String status) {
+        homePage.enterGiftCode(code);
+        if (status == "invalid"){
+            Assert.assertEquals(homePage.getErrorMsg(), "This code is invalid");
+        }
     }
 
-    @Then("check Bahrain Currency")
-    public void checkBahrainCurrency() {
-        List<String> prices = homePage.getPrices();
-        Assert.assertEquals(prices.get(0), "BHD/month");
-        Assert.assertEquals(prices.get(1), "BHD/month");
-        Assert.assertEquals(prices.get(2), "BHD/month");
+    @And("choose {string} package")
+    public void choosePackage(String plan) {
+        homePage.startTrial(plan);
+    }
+
+
+    @Then("payment details are correct {string}")
+    public void paymentDetailsAreCorrect(String price) {
+        Assert.assertEquals(homePage.getTotalPrice(), price);
     }
 }

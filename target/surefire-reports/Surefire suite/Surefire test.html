@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 11 16:54:51 EET 2023</td>
+<td>Started on:</td><td>Sat May 13 11:01:07 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49146 ms)</td>
+<tr><td>Total time:</td><td>176 seconds (176419 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,53 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and use gift code", "Optional[KSA gift code]"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.029
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-SI31G4B&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MKSOLU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30316a09747ff7813548e91b0cff2088
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at StepDefinitions.Hooks.setUp(Hooks.java:25)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195615010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195615010'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.029
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-SI31G4B&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MKSOLU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30316a09747ff7813548e91b0cff2088
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at StepDefinitions.Hooks.setUp(Hooks.java:25)
+</pre></div></td>
+<td>13</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,20 +122,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Kuwait page and check packages names", "Optional[Kuwait packages]"</td>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and subscribe to lite package", "Optional[KSA packages]"</td>
 <td></td>
-<td>17</td>
-<td>Runners.TestRunner@275710fc</td></tr>
+<td>13</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
 <tr>
 <td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and check packages names", "Optional[KSA packages]"</td>
 <td></td>
 <td>13</td>
-<td>Runners.TestRunner@275710fc</td></tr>
+<td>Runners.TestRunner@400cff1a</td></tr>
 <tr>
 <td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Bahrain page and check packages names", "Optional[Bahrain packages]"</td>
 <td></td>
 <td>16</td>
-<td>Runners.TestRunner@275710fc</td></tr>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and subscribe to lite package", "Optional[KSA packages]"</td>
+<td></td>
+<td>11</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and subscribe to lite package", "Optional[KSA packages]"</td>
+<td></td>
+<td>12</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Kuwait page and check packages names", "Optional[Kuwait packages]"</td>
+<td></td>
+<td>14</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and check packages names", "Optional[KSA packages]"</td>
+<td></td>
+<td>13</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open KSA page and check packages names", "Optional[KSA packages]"</td>
+<td></td>
+<td>12</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Bahrain page and check packages names", "Optional[Bahrain packages]"</td>
+<td></td>
+<td>12</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Bahrain page and check packages names", "Optional[Bahrain packages]"</td>
+<td></td>
+<td>12</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Kuwait page and check packages names", "Optional[Kuwait packages]"</td>
+<td></td>
+<td>15</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Kuwait page and check packages names", "Optional[Kuwait packages]"</td>
+<td></td>
+<td>13</td>
+<td>Runners.TestRunner@400cff1a</td></tr>
 </table><p>
 </body>
 </html>

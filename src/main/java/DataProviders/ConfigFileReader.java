@@ -76,10 +76,10 @@ public class ConfigFileReader {
         String environmentName = properties.getProperty("environment");
 
         switch (environmentName) {
-            case "local":
-                return EnvironmentType.LOCAL;
-            case "remote":
-                return EnvironmentType.REMOTE;
+            case "QA":
+                return EnvironmentType.QA;
+            case "PreProd":
+                return EnvironmentType.PreProd;
             default:
                 throw new RuntimeException("Environment type key value in configuration file is not matched: " + environmentName);
         }
